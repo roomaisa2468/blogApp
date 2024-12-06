@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>form</title>
+    <link rel="stylesheet" type="text/css" href="slide navbar style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+        <div class="signup">
+            <form>
+                <label for="chk" aria-hidden="true">Sign up</label>
+                <input type="text" id="username" name="txt" placeholder="user name" required="">
+                <input id="sign-email" type="email" name="email" placeholder="Email" required="">
+                <input id="sign-password" type="password" name="pswd" placeholder="Password" required="">
+                <input id="repeat-password" type="password" name="repeat-pswd" placeholder="Repeat Password" required="">
+                <button id="signup-submit">Sign up</button>
+            </form>
+        </div>
+        
+        <div class="login">
+            <form>
+                <label for="chk" aria-hidden="true">Login</label>
+                <input id="login-email" type="email" name="email" placeholder="Email" required="">
+                <input id="login-password" type="password" name="pswd" placeholder="Password" required="">
+                <button id="login-submit">Login</button>
+            </form>
+            <!---------- Sign in with Google button  --------->
+            <button id="google-login-btn" type="button" class="login-with-google-btn">
+                Sign in with Google
+            </button>
+        </div>
+    </div>
+    <script type="module" src="./register.js"></script>
+</body>
+
+</html>

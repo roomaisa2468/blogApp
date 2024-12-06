@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Author's Posts</title>
+    <link rel="stylesheet" href="./auther.css">
+</head>
+
+<body>
+    <!-- Greeting Section with Login Button -->
+    <div id="greeting-section">
+        <h1 id="greeting"></h1>
+        <button id="login-btn" onclick="window.location.href = 'index.html';">Login / Sign up</button>
+    </div>
+
+    <!-- Display Posts Section -->
+    <div id="posts-section">
+        <h2>Recent Posts</h2>
+        <div id="posts-container"></div>
+    </div>
+
+    <!-- Firebase imports -->
+    <script type="module" src="author.js"></script>
+</body>
+
+</html>
